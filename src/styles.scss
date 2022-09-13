@@ -40,15 +40,27 @@ $Proyect-theme: mat.define-light-theme((
 @import "./assets/styles/custom_theme_style.scss";
 @import "./assets/styles/menu.css";
 @import "./assets/styles/submenu.css";
+@import "./assets/styles/saavi-styles.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @font-face {
     font-family: 'santec';
     src: url(assets/Fonts/SantanderText-Regular.otf) format("opentype");
 }
 
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
 }
 
 body {
@@ -58,7 +70,7 @@ body {
 
 button {
     font-family:santec,Roboto, "Helvetica Neue", sans-serif;
-}
+} */
 
 .btn .font {
     font-family:santec,Roboto, "Helvetica Neue", sans-serif;

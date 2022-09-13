@@ -1,0 +1,114 @@
+/* Tipographic */
+@font-face {
+    font-family: "Stem, sans-serif";
+    src: url(../Fonts/SAAVI/spacetype-steam-base.otf);
+    /* src: url(../Fonts/SAAVI/spacetype-steam-base.otf) format("opentype"); */
+};
+@font-face {
+    font-family: "Arial, sans-serif";
+    src: url(../Fonts/SAAVI/Arial.otf);
+};
+$font-family: (
+    Stem: "Stem, sans-serif", 
+    Arial: "Arial, sans-serif", 
+);
+
+/* Color Palette */
+$color-palette-primary: (
+    412-C: #333333,
+    2756-C: #151F6D,
+    3005-C: #0071BC,
+    298-C: #29ABFF,
+);
+$color-palette-secondary: (
+    COO-GRAY-11-C: #575756,
+    2718-C: #4980FB,
+    333-C: #28F0FF,
+    7718-C: #007377,
+    362-C: #509E2F,
+    396-C: #E1E000,
+    7549-C: #FBBA09,
+    266-C: #8034CB
+);
+
+/* background-color */
+
+/* primary */
+.bg-primary-gray {
+    background-color: map-get($color-palette-primary, 412-C);
+}
+.bg-primary-blue {
+    background-color: map-get($color-palette-primary, 2756-C);
+}
+.bg-primary-turquoise {
+    background-color: map-get($color-palette-primary, 3005-C);
+}
+.bg-primary-green {
+    background-color: map-get($color-palette-primary, 298-C);
+}
+
+/* secondary */
+.bg-secondary-gray {
+    background-color: map-get($color-palette-secondary, COO-GRAY-11-C);
+}
+.bg-secondary-blue {
+    background-color: map-get($color-palette-secondary, 2718-C);
+}
+.bg-secondary-green-1 {
+    background-color: map-get($color-palette-secondary, 333-C);
+}
+.bg-secondary-green-2 {
+    background-color: map-get($color-palette-secondary, 7718-C);
+}
+.bg-secondary-green-3 {
+    background-color: map-get($color-palette-secondary, 362-C);
+}
+.bg-secondary-yellow {
+    background-color: map-get($color-palette-secondary, 396-C);
+}
+.bg-secondary-melon {
+    background-color: map-get($color-palette-secondary, 7549-C);
+}
+.bg-secondary-purple {
+    background-color: map-get($color-palette-secondary, 266-C);
+}
+
+
+
+
+/* font-family */
+.text-stem {
+    font-family: map-get($font-family, Stem);
+    font-size: medium;
+}
+.text-stem-special {
+    font-family: map-get($font-family, Stem);
+    font-size: medium;
+    font-weight: bold;
+}
+.text-stem-italic {
+    font-family: map-get($font-family, Stem);
+    font-size: medium;
+    font-style: italic;
+}
+.text-arial {
+    font-family: map-get($font-family, Arial);
+    font-size: medium;
+}
+.text-arial-special {
+    font-family: map-get($font-family, Arial);
+    font-size: medium;
+    font-weight: bold;
+}
+.text-arial-italic {
+    font-family: map-get($font-family, Arial);
+    font-size: medium;
+    font-style: italic;
+}
+
+/* groid bootstrap */
+/* sm
+md
+lg
+xl
+xxl */  
